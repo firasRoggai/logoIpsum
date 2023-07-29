@@ -1,0 +1,17 @@
+@import "./variables.scss";
+@import "./navbar.scss";
+@import "./header.scss";
+@import "./section.scss";
+@import "./collection.scss";
+@import "./footer.scss";
+
+// main settings
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+// parallax effect

@@ -1,0 +1,45 @@
+// header
+header {
+  background-image: url("../img/windowMan.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 84vh;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 100px;
+    font-weight: normal;
+
+    @media (max-width: $md) {
+      font-size: 50px;
+    }
+    @media (min-width: $xl) {
+      font-size: 120px;
+    }
+  }
+  h3 {
+    font-size: 27px;
+    font-weight: 300;
+    margin-top: -26px;
+
+    @media (max-width: $md) {
+      font-size: 16px;
+      margin-top: -6px;
+    }
+    @media (min-width: $xl) {
+      font-size: 35px;
+    }
+  }
+  .cta-btn--white {
+    margin: 42px 0px;
+    @media (max-width: $md) {
+      margin: 32px 0px;
+    }
+  }
+}
