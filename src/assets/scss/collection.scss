@@ -1,6 +1,7 @@
 // collection
 .collection {
     padding: 75px 0px 47px 0px;
+
     @media (max-width: $md) {
       padding: 47px 0px 19px 0px;
     }
@@ -12,12 +13,16 @@
     text-transform: uppercase;
     font-weight: 600;
     padding: 29px 0px;
+
+    @media (max-width: $bigger-xl) {
+      font-size: 26px;
+    }
   }
   .collection__img-gallery {
     display: flex;
     justify-content: center;
   
-    @media (max-width: $md) {
+    @media (max-width: $lg) {
       overflow-x: auto;
       white-space: nowrap;
       justify-content: unset;
@@ -36,6 +41,11 @@
       @media (min-width: $xl) {
         height: 500px;
         width: 395px;
+        padding: 0px 21px;
+      }
+      @media (min-width: $xl) {
+        height: 664px;
+        width: 524px;
         padding: 0px 21px;
       }
     }

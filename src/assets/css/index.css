@@ -61,7 +61,7 @@ nav {
 }
 @media (min-width: 2560px) {
   nav {
-    padding: 0px 185.85px;
+    padding: 0px 187.85px;
   }
 }
 
@@ -73,6 +73,12 @@ nav {
   .logo {
     height: 35px;
     width: 199px;
+  }
+}
+@media (min-width: 2560px) {
+  .logo {
+    height: 50px;
+    width: 264.18px;
   }
 }
 
@@ -87,7 +93,7 @@ nav {
 
 .nav__item {
   color: #000000;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   padding: 0px 15px;
 }
@@ -101,7 +107,8 @@ nav {
 }
 @media (min-width: 2560px) {
   .nav__item {
-    padding: 0px 76px;
+    padding: 0px 38px;
+    font-size: 23px;
   }
 }
 
@@ -123,6 +130,12 @@ nav {
   .nav__shopping-icon img {
     height: 22px;
     width: 20px;
+  }
+}
+@media (min-width: 2560px) {
+  .nav__shopping-icon img {
+    height: 30px;
+    width: 27.44px;
   }
 }
 
@@ -164,7 +177,6 @@ nav {
 }
 
 header {
-  background-image: url("../img/windowMan.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -178,7 +190,7 @@ header {
 }
 header h1 {
   font-size: 100px;
-  font-weight: normal;
+  font-weight: 600;
 }
 @media (max-width: 768px) {
   header h1 {
@@ -186,6 +198,11 @@ header h1 {
   }
 }
 @media (min-width: 1920px) {
+  header h1 {
+    font-size: 100px;
+  }
+}
+@media (min-width: 2560px) {
   header h1 {
     font-size: 120px;
   }
@@ -206,6 +223,12 @@ header h3 {
     font-size: 35px;
   }
 }
+@media (min-width: 2560px) {
+  header h3 {
+    font-size: 35px;
+    font-weight: 500;
+  }
+}
 header .cta-btn--white {
   margin: 42px 0px;
 }
@@ -217,10 +240,16 @@ header .cta-btn--white {
 
 .section {
   padding: 75px 0px 47px 0px;
+  background: white;
 }
 @media (max-width: 768px) {
   .section {
     padding: 47px 0px 19px 0px;
+  }
+}
+@media (min-width: 2560px) {
+  .section {
+    padding: 119px 0px 47px 0px;
   }
 }
 
@@ -240,6 +269,11 @@ header .cta-btn--white {
 }
 @media (min-width: 1920px) {
   .section__title {
+    font-size: 30px;
+  }
+}
+@media (min-width: 2560px) {
+  .section__title {
     font-size: 40px;
   }
 }
@@ -256,6 +290,12 @@ header .cta-btn--white {
     width: 812px;
     font-size: 40px;
     gap: 16px;
+  }
+}
+@media (min-width: 2560px) {
+  .section__main-imgs {
+    height: auto;
+    width: auto;
   }
 }
 
@@ -276,6 +316,12 @@ header .cta-btn--white {
     height: 816px;
     width: 812px;
     font-size: 40px;
+  }
+}
+@media (min-width: 2560px) {
+  .section__img {
+    width: 1078px;
+    height: 1084px;
   }
 }
 .section__img img {
@@ -301,12 +347,17 @@ header .cta-btn--white {
   font-weight: 600;
   padding: 29px 0px;
 }
+@media (max-width: 2560px) {
+  .collection__title {
+    font-size: 26px;
+  }
+}
 
 .collection__img-gallery {
   display: flex;
   justify-content: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .collection__img-gallery {
     overflow-x: auto;
     white-space: nowrap;
@@ -332,6 +383,13 @@ header .cta-btn--white {
     padding: 0px 21px;
   }
 }
+@media (min-width: 1920px) {
+  .collection__img-gallery img {
+    height: 664px;
+    width: 524px;
+    padding: 0px 21px;
+  }
+}
 
 .collection__btn-container {
   display: flex;
@@ -344,7 +402,7 @@ footer {
   justify-content: space-around;
   padding: 40px 30px;
   margin-top: 60px;
-  background: #FAFAFA;
+  background: #fafafa;
 }
 
 .footer__links-container {
@@ -401,6 +459,18 @@ footer {
     display: none;
   }
 }
+@media (min-width: 2560px) {
+  .footer__header-link {
+    font-size: 24px;
+  }
+  .footer__links {
+    margin: 0px 124px;
+  }
+  .footer__link {
+    font-size: 21px;
+    margin: 15px 0px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -408,6 +478,33 @@ footer {
   font-family: "Jost", sans-serif;
   list-style: none;
   text-decoration: none;
+}
+
+.parallax-wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+header {
+  position: relative;
+  transform-style: preserve-3d;
+  margin-left: -10px;
+  z-index: -1;
+}
+
+.header__background-img {
+  background-image: url("../img/windowMan.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transform: translateZ(-10px) scale(2);
 }
 
 /*# sourceMappingURL=index.css.map */

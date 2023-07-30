@@ -1,4 +1,5 @@
 import { useState } from 'react'
+
 // assets
 import logo from '../assets/img/icons/logo.svg'
 import inboxIcon from '../assets/img/icons/inboxIcon.svg'

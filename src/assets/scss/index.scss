@@ -14,4 +14,29 @@
   list-style: none;
   text-decoration: none;
 }
+
 // parallax effect
+.parallax-wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+header {
+  position: relative;
+  transform-style: preserve-3d;
+  margin-left: -10px;
+  z-index: -1;
+}
+.header__background-img {
+  background-image: url("../img/windowMan.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transform: translateZ(-10px) scale(2);
+}

@@ -1,5 +1,5 @@
-import yelowShirtGuy from '../assets/img/yelowShirtGuy.jpeg'
-import couplePic from '../assets/img/couplePic.jpeg'
+import yelowShirtGuy from '../assets/img/yelowShirtGuy.webp'
+import couplePic from '../assets/img/couplePic.webp'
 const Section = () => {
     return (
         <section className='section'>

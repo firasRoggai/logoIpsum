@@ -1,9 +1,9 @@
 /* Error: Undefined variable.
  *    ,
- * 26 |   @media (min-width: $xl) {
- *    |                      ^^^
+ * 26 | @media (min-width: $xl) {
+ *    |                    ^^^
  *    '
- *   src\assets\scss\footer.scss 26:22  root stylesheet */
+ *   src\assets\scss\footer.scss 26:20  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 26 \2502    @media (min-width: $xl) {\d\a    \2502                       ^^^\a    \2575 \a   src\\assets\\scss\\footer.scss 26:22  root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 26 \2502  @media (min-width: $xl) {\d\a    \2502                     ^^^\a    \2575 \a   src\\assets\\scss\\footer.scss 26:20  root stylesheet";
 }

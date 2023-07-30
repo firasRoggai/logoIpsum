@@ -1,7 +1,7 @@
-import kissing from '../assets/img/kissing.jpeg'
-import redShirtWomen from '../assets/img/redShirtWomen.jpeg'
-import christmas from '../assets/img/christmas.jpeg'
-import yellowShirtWomen from '../assets/img/yellowShirtWomen.jpeg'
+import kissing from '../assets/img/kissing.webp'
+import redShirtWomen from '../assets/img/redShirtWomen.webp'
+import christmas from '../assets/img/christmas.webp'
+import yellowShirtWomen from '../assets/img/yellowShirtWomen.webp'
 
 
 const Collection = () => {
